@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body class="container">
-    <header class="header swatch-primary flex items-center justify-between py-s">
+    <header class="header swatch-primary flex items-center justify-between p-xs">
       <div class="logo-container">
         <div class="logo">
          <img src="assets/images/icons/Logo.svg" alt="Slideshow Maker Logo">
@@ -23,8 +23,8 @@
       </nav>
     </header>
     <main class="container-content flex flex-col gap-2lg">
-      <section class="hero">
-        <div class="hero-content">
+      <section class="hero hero-content">
+        <div class="">
           <h1 class="text-3xl">
             <span class="text-white btn-primary hero-title">FREE</span>SLIDESHOW MAKER
           </h1>
@@ -257,11 +257,17 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
-        <h2>USER REVIEWS</h2>
-        <div class="reviews-list">
-          <article class="review">
-            <div class="review-stars">★★★★★</div>
+      <section class="reviews bg-primary">
+        <h2 class="reviews-title text-white text-2xl">USER REVIEWS</h2>
+        <div class="reviews-list grid grid-cols-2 gap-sm">
+          <article class="review bg-white p-lg">
+            <div class="review-stars">
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+            </div>
             <p>
               This slideshow creator is exactly what I needed. The interface is
               intuitive, and adding music was effortless. My video turned out
@@ -269,8 +275,14 @@
             </p>
             <div class="review-author">NATALIE (WEDDING PLANNER)</div>
           </article>
-          <article class="review">
-            <div class="review-stars">★★★★★</div>
+          <article class="review bg-white p-lg">
+            <div class="review-stars">
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+            </div>
             <p>
               I’ve tried a few free slideshow makers, but this one stands out.
               Smooth transitions, and it didn’t lag even with a large batch of
@@ -278,8 +290,14 @@
             </p>
             <div class="review-author">DEREK (EDUCATOR)</div>
           </article>
-          <article class="review">
-            <div class="review-stars">★★★★★</div>
+          <article class="review bg-white p-lg">
+            <div class="review-stars">
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+            </div>
             <p>
               Perfect for creating quick, polished designs. I love how
               customizable it is — from timing to effects and music. This tool
@@ -287,8 +305,14 @@
             </p>
             <div class="review-author">RIYA (SMALL BUSINESS OWNER)</div>
           </article>
-          <article class="review">
-            <div class="review-stars">★★★★★</div>
+          <article class="review bg-white p-lg">
+            <div class="review-stars">
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+              <span class="star filled"></span>
+            </div>
             <p>
               Clean design, easy to use, and the final quality is excellent.
               Love the audio options and 4K export in the desktop version.
@@ -367,23 +391,19 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer-container">
+    <footer class="footer swatch-primary py-2lg">
+      <div class="footer-container flex justify-between items-start">
         <div class="footer-logo">
-          <img src="logo.svg" alt="Slideshow Maker Logo" />
-          <span>
-            <span class="footer-title">SLIDESHOW</span>
-            <span class="footer-subtitle">MAKER</span>
-          </span>
+          <img src="assets/images/icons/Logo.svg" alt="Slideshow Maker Logo" />
         </div>
-        <nav class="footer-nav">
-          <ul>
+        <nav class="footer-nav flex text-white text-sm">
+          <ul class="footer-links flex flex-col gap-s">
             <li><a href="#">Features</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Tutorials & How-To Guide</a></li>
             <li><a href="#">Contact us</a></li>
           </ul>
-          <ul>
+          <ul class="footer-links flex flex-col gap-s">
             <li><a href="#">Terms & Conditions</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>

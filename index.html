@@ -3,50 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <title>Slideshow Maker</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body>
-    <header>
+  <body class="container">
+    <header class="header swatch-primary flex items-center justify-between py-s">
       <div class="logo-container">
         <div class="logo">
          <img src="assets/images/icons/Logo.svg" alt="Slideshow Maker Logo">
         </div>
-        <div class="caption">
-          <div class="slideshow">SLIDESHOW</div>
-          <div class="maker">MAKER</div>
-        </div>
       </div>
-      <nav>
-        <div class="links">
+      <nav class="flex gap-lg items-center font-bold">
+        <div class="nav-links flex gap-md nav-links text-white text-sm font-regular">
           <a href="#">Features</a>
           <a href="#">FAQ</a>
           <a href="#">Tutorials &amp; How-To Guide</a>
           <a href="#">Contact us</a>
         </div>
-        <!-- could be a button (if download starts immediately) -->
-        <a class="cta" href="#">DOWNLOAD DESKTOP APP</a>
+        <a class="bg-white text-primary py-xs px-sm rounded-lg" href="#">DOWNLOAD DESKTOP APP</a>
       </nav>
     </header>
-    <main>
+    <main class="container-content flex flex-col gap-2lg">
       <section class="hero">
         <div class="hero-content">
-          <h1>
-            <span class="highlight">FREE SLIDESHOW MAKER</span>
+          <h1 class="text-3xl">
+            <span class="text-white btn-primary hero-title">FREE</span>SLIDESHOW MAKER
           </h1>
-          <p>
+          <p class="hero-desc text-2lg text-gray-dark">
             Turn your photos and clips into stunning videos to create free
             slideshows with music, transitions, and zero fuss
           </p>
         </div>
-        <div class="hero-cards">
+        <div class="hero-cards flex gap-lg items-center">
           <article class="card card-desktop">
-            <div class="card-header">
+            <div class="card-header flex items-center">
+              <img src="assets/images/icons/musicIcon.svg" alt="">
               <span class="card-title"
                 >Best Slideshow Software for Windows</span
               >
               <span class="badge badge-green">100% free</span>
             </div>
-            <a href="#" class="card-btn">DOWNLOAD SLIDESHOW MAKER</a>
+            <a href="#" class="card-btn btn btn-primary">DOWNLOAD SLIDESHOW MAKER</a>
             <ul class="card-list">
               <li>Make free video slideshows</li>
               <li>Over 25 transitions and effects</li>
@@ -56,11 +52,12 @@
             </ul>
           </article>
           <article class="card card-online">
-            <div class="card-header">
+            <div class="card-header flex items-center">
+              <img src="assets/images/icons/musicIcon.svg" alt="">
               <span class="card-title">Online Photo Slideshow Maker</span>
               <span class="badge badge-gray">No install</span>
             </div>
-            <a href="#" class="card-btn-outline">CREATE SLIDESHOW ONLINE</a>
+            <a href="#" class="card-btn-outline btn btn-secondary">CREATE SLIDESHOW ONLINE</a>
             <ul class="card-list">
               <li>No installation needed</li>
               <li>Simple drag-and-drop editor</li>
@@ -86,10 +83,13 @@
       <section class="features">
         <h2>SLIDESHOW CREATOR FEATURES</h2>
         <!-- maybe grid is better here, without nesting features-list -> feature-row -->
-        <div class="features-list">
-          <div class="feature-row">
+        <div class="features-list flex flex-col gap-sm">
+          <div class="feature-row flex">
             <div class="feature-card">
-              <h3>Add Music</h3>
+              <div class="flex items-center">
+                <img src="assets/images/icons/musicIcon.svg" alt="Add Music">
+                <h3>Add Music</h3>
+              </div>
               <p>Turn photos into a video with audio to match the mood</p>
               <dl>
                 <dt><strong>Desktop App</strong></dt>
@@ -99,15 +99,18 @@
               </dl>
             </div>
             <div class="feature-image">
-              <img src="feature-add-music.png" alt="Add Music" />
+              <img src="assets/images/image/exportPicture.webp" alt="Add Music" />
             </div>
           </div>
-          <div class="feature-row">
+          <div class="feature-row flex">
             <div class="feature-image">
-              <img src="feature-transitions.png" alt="Transitions" />
+              <img src="assets/images/image/exportPicture.webp" alt="Add Music" />
             </div>
             <div class="feature-card">
-              <h3>Use Transitions Effects</h3>
+             <div class="flex items-center">
+               <img src="assets/images/icons/effectsIcon.svg" alt="Use Transitions Effects">
+               <h3>Use Transitions Effects</h3>
+             </div>
               <p>
                 Give your video slideshow a professional look with seamless
                 transitions
@@ -120,9 +123,12 @@
               </dl>
             </div>
           </div>
-          <div class="feature-row">
+          <div class="feature-row flex">
             <div class="feature-card">
-              <h3>Add Captions</h3>
+              <div class="flex items-center">
+                <img src="assets/images/icons/captionsIcon.svg" alt="Add Captions">
+                <h3>Add Captions</h3>
+              </div>
               <p>Tell a story with on-screen text</p>
               <dl>
                 <dt><strong>Desktop App</strong></dt>
@@ -132,15 +138,18 @@
               </dl>
             </div>
             <div class="feature-image">
-              <img src="feature-captions.png" alt="Add Captions" />
+              <img src="assets/images/image/exportPicture.webp" alt="Add Music" />
             </div>
           </div>
-          <div class="feature-row">
+          <div class="feature-row flex">
             <div class="feature-image">
-              <img src="feature-duration.png" alt="Control Slide Duration" />
+              <img src="assets/images/image/exportPicture.webp" alt="Add Music" />
             </div>
             <div class="feature-card">
-              <h3>Control Slide Duration</h3>
+             <div class="flex items-center">
+               <img src="assets/images/icons/durationIcon.svg" alt="Control Slide Duration">
+               <h3>Control Slide Duration</h3>
+             </div>
               <p>Decide how long each image stays on the screen</p>
               <dl>
                 <dt><strong>Desktop App</strong></dt>
@@ -150,9 +159,12 @@
               </dl>
             </div>
           </div>
-          <div class="feature-row">
+          <div class="feature-row flex">
             <div class="feature-card">
-              <h3>Edit Slideshow</h3>
+              <div class="flex items-center">
+                <img src="assets/images/icons/effectsIcon.svg" alt="Use Transitions Effects">
+                <h3>Use Transitions Effects</h3>
+              </div>
               <p>Make each photo, transition, and other elements perfect</p>
               <dl>
                 <dt><strong>Desktop App</strong></dt>
@@ -162,15 +174,18 @@
               </dl>
             </div>
             <div class="feature-image">
-              <img src="feature-edit.png" alt="Edit Slideshow" />
+              <img src="assets/images/image/exportPicture.webp" alt="Add Music" />
             </div>
           </div>
-          <div class="feature-row">
+          <div class="feature-row flex">
             <div class="feature-image">
-              <img src="feature-save.png" alt="Save Projects" />
+              <img src="assets/images/image/exportPicture.webp" alt="Add Music" />
             </div>
             <div class="feature-card">
-              <h3>Save Projects</h3>
+              <div class="flex items-center">
+                <img src="assets/images/icons/saveIcon.svg" alt="Save Projects">
+                <h3>Save Projects</h3>
+              </div>
               <p>Go back to your picture slideshow and work at your own pace</p>
               <dl>
                 <dt><strong>Desktop App</strong></dt>
@@ -180,9 +195,12 @@
               </dl>
             </div>
           </div>
-          <div class="feature-row">
+          <div class="feature-row flex">
             <div class="feature-card">
-              <h3>Export Video Slideshow</h3>
+              <div class="flex items-center">
+                <img src="assets/images/icons/exportIcon.svg" alt="Export Video Slideshow">
+                <h3>Export Video Slideshow</h3>
+              </div>
               <p>Download and share the result in any format you need</p>
               <dl>
                 <dt><strong>Desktop App</strong></dt>
@@ -192,7 +210,7 @@
               </dl>
             </div>
             <div class="feature-image">
-              <img src="feature-export.png" alt="Export Video Slideshow" />
+              <img src="assets/images/image/exportPicture.webp" alt="Add Music" />
             </div>
           </div>
         </div>

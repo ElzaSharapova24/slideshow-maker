@@ -124,14 +124,14 @@ h1, h2, h3, h4, h5, h6, p{
 .container {
     max-width: var(--container-width);
     margin: 0 auto;
-    padding: 0 var(--spacing-xs);
+    padding: 0;
 }
 
 /* Content container */
 .container-content {
     max-width: var(--content-width);
     margin: 0 auto;
-    padding: 0 var(--spacing-xs);
+    padding: 0;
 }
 
 .hero-content {
@@ -520,9 +520,6 @@ a {
     margin-bottom: 40px;
 }
 
-.nav-links {
-}
-
 
 .colored-title {
     padding: 4px;
@@ -857,6 +854,20 @@ a {
 
 .filled {
     background-image: url('/assets/images/icons/star.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cta-box {
+    background-color: var(--color-white);
+    width: 813px;
+    height: 361px;
+    box-shadow: 0px 4px 32px 0px #0000001A;
+}
+
+.cta-final {
+    background-image: url('/assets/images/icons/ctaBg.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

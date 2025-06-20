@@ -2,12 +2,12 @@
     /* === COLORS === */
     --color-white: #FFFFFF;
     --color-primary: #0B96DB;
-    --color-primary-dark: #0073DF;
+    --color-primary-dark: #0057A8;
     --color-primary-light: #EAF8FF;
-    --color-gray-dark: #747C8E;
-    --color-gray-medium: #C1C6CF;
+    --color-gray-dark: #505664;
+    --color-gray-medium: #8A8F9A;
     --color-gray-light: #EBECEC;
-    --color-gray: #A8ADB8;
+    --color-gray: #6D7380;
 
     /* === SPACING === */
     --spacing-xxs: 8px;

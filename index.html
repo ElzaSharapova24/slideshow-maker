@@ -26,8 +26,8 @@
     <section class="hero">
         <div class="hero-content">
             <span class="hero-bg" aria-hidden="true" role="presentation"></span>
-            <h1 class="text-3xl">
-                <span class="text-white btn-primary colored-title">FREE</span>SLIDESHOW MAKER
+            <h1 class="text-3xl mb-2s hero-main-title">
+                <span class="text-white btn-primary colored-title hero-title">FREE</span>SLIDESHOW MAKER
             </h1>
             <p class="hero-desc text-2lg text-gray-dark">
                 Turn your photos and clips into stunning videos to create free
@@ -36,13 +36,16 @@
         </div>
         <div class="hero-grid">
             <div class="hero-cards flex gap-lg items-center">
-                <article class="card card-desktop">
-                    <div class="card-header flex items-center">
+                <article class="card-desktop hero-card p-sm py-s">
+                    <div class="flex items-center gap-xxs mb-sm">
                         <img src="assets/images/icons/windows.svg" alt="" aria-hidden="true">
-                        <h2 class="card-title">Best Slideshow Software for Windows</h2>
-                        <span class="badge badge-green">100% free</span>
+                       <h2 class="flex flex-col font-semibold text-lg">
+                           <span>Best Slideshow</span>
+                           <span>Software for Windows</span>
+                       </h2>
+                        <span class="badge badge-green"></span>
                     </div>
-                    <a href="#" class="card-btn btn btn-primary">DOWNLOAD SLIDESHOW MAKER</a>
+                    <a href="#" class="card-btn btn btn-primary font-bold mb-2s">DOWNLOAD SLIDESHOW MAKER</a>
                     <ul class="flex flex-col gap-xs">
                         <li class="flex items-center gap-xxs">
                             <img src="assets/images/icons/check.svg" alt="" aria-hidden="true"/>
@@ -66,13 +69,16 @@
                         </li>
                     </ul>
                 </article>
-                <article class="card card-online">
-                    <div class="card-header flex items-center">
+                <article class="card-online hero-card p-sm py-s">
+                    <div class="flex items-center gap-xxs mb-sm">
                         <img src="assets/images/icons/web.svg" alt="" aria-hidden="true">
-                        <span class="card-title">Online Photo Slideshow Maker</span>
-                        <span class="badge badge-gray">No install</span>
+                        <h2 class="flex flex-col font-semibold text-lg">
+                            <span>Online Photo</span>
+                            <span>Slideshow Maker</span>
+                        </h2>
+                        <span class="badge badge-gray"></span>
                     </div>
-                    <a href="#" class="card-btn-outline btn btn-secondary">CREATE SLIDESHOW ONLINE</a>
+                    <a href="#" class="card-btn btn btn-secondary font-bold mb-2s">CREATE SLIDESHOW ONLINE</a>
                     <ul class="flex flex-col gap-xs">
                         <li class="flex items-center gap-xxs">
                             <img src="assets/images/icons/checkGray.svg" alt="" aria-hidden="true"/>
@@ -100,17 +106,22 @@
             </div>
             <div>
                 <div class="hero-images">
-                    <!-- Decorative image, e.g. screenshots or photos, go here -->
-                    <img src="assets/images/image/Photo.webp" alt="Person with camera"/>
-                    <img src="assets/images/image/Photo1.webp" alt="Oranges in water"/>
-                    <img src="assets/images/image/Photo2.webp" alt="Hot air balloons"/>
+                    <img src="assets/images/image/Photo.webp" alt="Person with camera" class="hero-image-0 hero-image"/>
+                    <img src="assets/images/image/Photo1.webp" alt="Oranges in water" class="hero-image-1 hero-image"/>
+                    <img src="assets/images/image/Photo2.webp" alt="Hot air balloons" class="hero-image-2 hero-image"/>
                 </div>
-                <p class="hero-bottom">
-                    <span class="make">MAKE</span>
-                    <span class="photo">PHOTO</span>
-                    <span class="slideshows">SLIDESHOWS</span>
-                    <span class="desc">IN MINUTES — NO WATERMARKS, NO LIMITS</span>
-                </p>
+                <div class="hero-bottom">
+                    <div class="hero-bottom-cta flex flex-col gap-xs">
+                        <div class="text-2lg font-bolder hero-bottom-wrapper">
+                            <span class="colored-title btn-primary hero-bottom-text">MAKE</span>
+                            <span class="photo">PHOTO</span>
+                        </div>
+                        <div class="text-2lg font-bolder hero-bottom-wrapper">
+                            <span class="btn-primary-dark colored-title hero-bottom-text">SLIDESHOWS</span>
+                            <span class="desc">IN&nbsp;MINUTES&nbsp;&mdash; NO&nbsp;WATERMARKS, NO&nbsp;LIMITS</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -119,8 +130,7 @@
             <h2 class="features-title text-2xl">SLIDESHOW CREATOR</h2>
             <span class="features-bg features-title text-2xl">FEATURES</span>
         </div>
-        <!-- maybe grid is better here, without nesting features-list -> feature-row -->
-        <div class="features-list flex flex-col gap-sm">
+        <div class="features-list flex flex-col gap-2s">
             <div class="feature-row flex items-center justify-between">
                 <div class="flex flex-col features-content">
                     <div class="flex items-center gap-s mb-s">
@@ -225,7 +235,7 @@
             <div class="feature-row flex items-center justify-between">
                 <div class="flex flex-col features-content">
                     <div class="flex items-center gap-s mb-s">
-                        <img class="features-icon" src="assets/images/icons/editIcon.svg" alt="Edit">
+                        <img src="assets/images/icons/editIcon.svg" alt="Edit">
                         <h3 class="text-2xl">Edit Slideshow</h3>
                     </div>
                     <p class="mb-sm">Make each photo, transition, and other elements perfect</p>
@@ -297,15 +307,13 @@
         </div>
     </section>
     <section class="how-to">
-        <h2 class="text-center text-2xl font-bolder mb-2lg">HOW TO <span class="btn-primary-dark colored-title">MAKE A SLIDESHOW</span>
+        <h2 class="text-center text-2xl font-bolder how-to-title">HOW TO <span class="btn-primary-dark colored-title">MAKE A SLIDESHOW</span>
             WITH MUSIC FOR <span class="btn-primary colored-title">FREE</span></h2>
-        <!-- Скрытые радио кнопки -->
         <input type="radio" class="step-input" id="step1" name="steps" checked>
         <input type="radio" class="step-input" id="step2" name="steps">
         <input type="radio" class="step-input" id="step3" name="steps">
 
         <div class="how-to-container">
-            <!-- Левая часть - изображения -->
             <div class="image-section">
                 <img class="step-image step3-image" src="assets/images/image/howToMake.webp"
                      alt="Export without watermark interface">
@@ -314,13 +322,11 @@
                 <img class="step-image step2-image" src="assets/images/image/howToMakeThird.webp"
                      alt="Customize video interface">
             </div>
-
-            <!-- Правая часть - список шагов -->
             <div class="steps-section">
                 <label for="step1" class="step-item">
                     <div class="step-indicator"></div>
                     <div class="step-content">
-                        <div class="step-title">STEP 1</div>
+                        <div class="step-title font-bolder text-gray-dark">STEP 1</div>
                         <h3 class="step-heading">Upload Your Files</h3>
                         <p class="step-description">Import your pictures, clips, and music</p>
                     </div>
@@ -329,7 +335,7 @@
                 <label for="step2" class="step-item">
                     <div class="step-indicator"></div>
                     <div class="step-content">
-                        <div class="step-title">STEP 2</div>
+                        <div class="step-title font-bolder text-gray-dark">STEP 2</div>
                         <h3 class="step-heading">Customize Your Video</h3>
                         <p class="step-description">Drag and drop to rearrange slides, add text and transitions, adjust
                             duration</p>
@@ -339,7 +345,7 @@
                 <label for="step3" class="step-item">
                     <div class="step-indicator"></div>
                     <div class="step-content">
-                        <div class="step-title">STEP 3</div>
+                        <div class="step-title font-bolder text-gray-dark">STEP 3</div>
                         <h3 class="step-heading">Export Without Watermark</h3>
                         <p class="step-description">Download your finished photo slideshow in HD or 4K</p>
                     </div>

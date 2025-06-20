@@ -301,6 +301,12 @@ h1, h2, h3, h4, h5, h6, p{
     box-shadow: 0 0 0 3px rgba(11, 150, 219, 0.3);
 }
 
+.link:hover {
+    text-decoration: underline;
+    color: var(--color-white);
+    transition: all var(--transition-base);
+}
+
 .input {
     width: 100%;
     padding: var(--spacing-xs) var(--spacing-sm);

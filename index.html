@@ -6,36 +6,36 @@
     <link rel="stylesheet" href="styles/style.css"/>
 </head>
 <body class="container">
-<header class="header swatch-primary flex items-center justify-between p-xs">
+<header class="header swatch-primary flex items-center justify-between p-xs" role="banner">
     <div class="logo-container">
         <div class="logo">
             <img src="assets/images/icons/logo.svg" alt="Slideshow Maker Logo">
         </div>
     </div>
-    <nav class="flex gap-lg items-center font-bold">
+    <nav class="flex gap-lg items-center font-bold" aria-label="Main">
         <div class="nav-links flex gap-md nav-links text-white text-sm font-regular">
-            <a href="#">Features</a>
-            <a href="#">FAQ</a>
-            <a href="#">Tutorials &amp; How-To Guide</a>
-            <a href="#">Contact us</a>
+            <a href="#" tabindex="0">Features</a>
+            <a href="#" tabindex="0">FAQ</a>
+            <a href="#" tabindex="0">Tutorials &amp; How-To Guide</a>
+            <a href="#" tabindex="0">Contact us</a>
         </div>
-        <a class="bg-white text-primary py-xs px-sm rounded-lg" href="#">DOWNLOAD DESKTOP APP</a>
+        <a class=" header-btn bg-white text-primary py-xs px-sm rounded-lg"  href="#download" tabindex="0">DOWNLOAD DESKTOP APP</a>
     </nav>
 </header>
-<main class="container-content flex flex-col gap-2lg">
-    <section class="hero">
-        <div class="hero-content">
-            <span class="hero-bg" aria-hidden="true" role="presentation"></span>
-            <h1 class="text-3xl mb-2s hero-main-title">
-                <span class="text-white btn-primary colored-title hero-title">FREE</span>SLIDESHOW MAKER
+<main id="main-content" class="container-content flex flex-col gap-2lg">
+    <section class="hero position-relative index-s" aria-labelledby="hero-title">
+        <div class="hero-content index-s">
+            <span class="hero-bg index-xs" aria-hidden="true" role="presentation"></span>
+            <h1 id="hero-title" class="text-3xl mb-2s hero-main-title">
+                <span class="text-white swatch-primary colored-title hero-title">FREE</span>SLIDESHOW MAKER
             </h1>
-            <p class="hero-desc text-2lg text-gray-dark">
+            <p class="hero-desc text-2lg text-gray-dark mb-lg">
                 Turn your photos and clips into stunning videos to create free
                 slideshows with music, transitions, and zero fuss
             </p>
         </div>
         <div class="hero-grid">
-            <div class="hero-cards flex gap-lg items-center">
+            <div class="hero-cards flex gap-lg items-stretch">
                 <article class="card-desktop hero-card p-sm py-s">
                     <div class="flex items-center gap-xxs mb-sm">
                         <img src="assets/images/icons/windows.svg" alt="" aria-hidden="true">
@@ -106,18 +106,18 @@
             </div>
             <div>
                 <div class="hero-images">
-                    <img src="assets/images/image/Photo.webp" alt="Person with camera" class="hero-image-0 hero-image"/>
-                    <img src="assets/images/image/Photo1.webp" alt="Oranges in water" class="hero-image-1 hero-image"/>
-                    <img src="assets/images/image/Photo2.webp" alt="Hot air balloons" class="hero-image-2 hero-image"/>
+                    <img src="assets/images/image/photo-1.webp" alt="Person with camera" class="hero-image-0 hero-image"/>
+                    <img src="assets/images/image/photo-2.webp" alt="Oranges in water" class="hero-image-1 hero-image"/>
+                    <img src="assets/images/image/photo-3.webp" alt="Hot air balloons" class="hero-image-2 hero-image"/>
                 </div>
                 <div class="hero-bottom">
-                    <div class="hero-bottom-cta flex flex-col gap-xs">
+                    <div class="hero-bottom-cta flex flex-col gap-xxs">
                         <div class="text-2lg font-bolder hero-bottom-wrapper">
-                            <span class="colored-title btn-primary hero-bottom-text">MAKE</span>
+                            <span class="colored-title swatch-primary hero-bottom-text text-white">MAKE</span>
                             <span class="photo">PHOTO</span>
                         </div>
                         <div class="text-2lg font-bolder hero-bottom-wrapper">
-                            <span class="btn-primary-dark colored-title hero-bottom-text">SLIDESHOWS</span>
+                            <span class="swatch-primary-dark colored-title hero-bottom-text text-white">SLIDESHOWS</span>
                             <span class="desc">IN&nbsp;MINUTES&nbsp;&mdash; NO&nbsp;WATERMARKS, NO&nbsp;LIMITS</span>
                         </div>
                     </div>
@@ -125,10 +125,10 @@
             </div>
         </div>
     </section>
-    <section class="features">
+    <section class="features" id="features">
         <div class="features-container flex justify-center items-center mb-lg font-bolder">
-            <h2 class="features-title text-2xl">SLIDESHOW CREATOR</h2>
-            <span class="features-bg features-title text-2xl">FEATURES</span>
+            <h2 class="features-title text-2xl" id="features-title">SLIDESHOW CREATOR</h2>
+            <span class="features-bg features-title text-2xl text-white">FEATURES</span>
         </div>
         <div class="features-list flex flex-col gap-2s">
             <div class="feature-row flex items-center justify-between">
@@ -258,7 +258,7 @@
             </div>
             <div class="feature-row flex items-center justify-between">
                 <div class="feature-image">
-                    <img src="assets/images/image/savePicture.webp" alt="Add Music"/>
+                    <img src="assets/images/image/save-picture.webp" alt="Add Music"/>
                 </div>
                 <div class="flex flex-col features-content">
                     <div class="flex items-center gap-s mb-s">
@@ -301,25 +301,25 @@
                     </ul>
                 </div>
                 <div class="feature-image">
-                    <img src="assets/images/image/exportPicture.webp" alt="Add Music"/>
+                    <img src="assets/images/image/export-picture.webp" alt="Add Music"/>
                 </div>
             </div>
         </div>
     </section>
-    <section class="how-to">
-        <h2 class="text-center text-2xl font-bolder how-to-title">HOW TO <span class="btn-primary-dark colored-title">MAKE A SLIDESHOW</span>
-            WITH MUSIC FOR <span class="btn-primary colored-title">FREE</span></h2>
+    <section class="how-to" aria-labelledby="how-to-title">
+        <h2 id="how-to-title" class="text-center text-2xl font-bolder how-to-title">HOW TO <span class="swatch-primary-dark colored-title text-white">MAKE A SLIDESHOW</span>
+            WITH MUSIC FOR <span class="swatch-primary colored-title text-white">FREE</span></h2>
         <input type="radio" class="step-input" id="step1" name="steps" checked>
         <input type="radio" class="step-input" id="step2" name="steps">
         <input type="radio" class="step-input" id="step3" name="steps">
 
         <div class="how-to-container">
             <div class="image-section">
-                <img class="step-image step3-image" src="assets/images/image/howToMake.webp"
+                <img class="step-image step3-image" src="assets/images/image/how-to-make.webp"
                      alt="Export without watermark interface">
-                <img class="step-image step1-image" src="assets/images/image/howToMakeSecond.webp"
+                <img class="step-image step1-image" src="assets/images/image/how-to-make-second.webp"
                      alt="Upload your files interface">
-                <img class="step-image step2-image" src="assets/images/image/howToMakeThird.webp"
+                <img class="step-image step2-image" src="assets/images/image/how-to-make-third.webp"
                      alt="Customize video interface">
             </div>
             <div class="steps-section">
@@ -353,10 +353,10 @@
             </div>
         </div>
     </section>
-    <section class="reviews bg-primary">
+    <section class="reviews">
         <h2 class="reviews-title text-white text-2xl mb-2lg">USER REVIEWS</h2>
         <div class="reviews-list grid grid-cols-2 gap-sm">
-            <article class="review bg-white p-lg">
+            <article class="review bg-white">
                 <div class="review-stars">
                     <span class="star filled"></span>
                     <span class="star filled"></span>
@@ -364,14 +364,14 @@
                     <span class="star filled"></span>
                     <span class="star filled"></span>
                 </div>
-                <p>
+                <p class="text-sm font-light mb-s">
                     This slideshow creator is exactly what I needed. The interface is
                     intuitive, and adding music was effortless. My video turned out
                     better than expected!
                 </p>
-                <div class="review-author">NATALIE (WEDDING PLANNER)</div>
+                <p class="review-author text-xs font-medium">NATALIE (WEDDING PLANNER)</p>
             </article>
-            <article class="review bg-white p-lg">
+            <article class="review bg-white">
                 <div class="review-stars">
                     <span class="star filled"></span>
                     <span class="star filled"></span>
@@ -379,14 +379,14 @@
                     <span class="star filled"></span>
                     <span class="star filled"></span>
                 </div>
-                <p>
+                <p class="text-sm font-light mb-s">
                     I’ve tried a few free slideshow makers, but this one stands out.
                     Smooth transitions, and it didn’t lag even with a large batch of
                     images.
                 </p>
-                <div class="review-author">DEREK (EDUCATOR)</div>
+                <div class="review-author text-xs font-medium">DEREK (EDUCATOR)</div>
             </article>
-            <article class="review bg-white p-lg">
+            <article class="review bg-white">
                 <div class="review-stars">
                     <span class="star filled"></span>
                     <span class="star filled"></span>
@@ -394,14 +394,14 @@
                     <span class="star filled"></span>
                     <span class="star filled"></span>
                 </div>
-                <p>
+                <p class="text-sm font-light mb-s">
                     Perfect for creating quick, polished designs. I love how
                     customizable it is — from timing to effects and music. This tool
                     saved me a ton of time.
                 </p>
-                <div class="review-author">RIYA (SMALL BUSINESS OWNER)</div>
+                <div class="review-author text-xs font-medium">RIYA (SMALL BUSINESS OWNER)</div>
             </article>
-            <article class="review bg-white p-lg">
+            <article class="review bg-white">
                 <div class="review-stars">
                     <span class="star filled"></span>
                     <span class="star filled"></span>
@@ -409,38 +409,39 @@
                     <span class="star filled"></span>
                     <span class="star filled"></span>
                 </div>
-                <p>
+                <p class="text-sm font-light mb-s">
                     Clean design, easy to use, and the final quality is excellent.
                     Love the audio options and 4K export in the desktop version.
                     Perfect slideshow software for my YouTube channel.
                 </p>
-                <div class="review-author">JULES (CONTENT CREATOR)</div>
+                <div class="review-author text-xs font-medium">JULES (CONTENT CREATOR)</div>
             </article>
         </div>
     </section>
-    <section class="cta-final">
-        <div class="cta-images">
-            <img src="cta-photo1.jpg" alt="People jumping on the beach"/>
-            <img src="cta-photo2.jpg" alt="Friends celebrating outdoors"/>
-            <img src="cta-photo3.jpg" alt="Sunflowers field"/>
-            <img src="cta-photo4.jpg" alt="People dancing at sunset"/>
-            <img src="cta-photo5.jpg" alt="Person with dog at sunset"/>
-        </div>
-        <div class="cta-box flex flex-col items-center">
-            <h2 class="text-2xl mb-sm">
-                <span class="btn-primary colored-title">MAKE</span> YOUR FIRST <br/>
-                <span class="btn-primary-dark colored-title">SLIDESHOW</span> NOW
+    <section id="download" class="cta-final position-relative flex flex-col items-center justify-center" aria-labelledby="cta-title">
+        <div class="cta-box card">
+            <h2 id="cta-title" class="cta-title text-3xl">
+                <span class="swatch-primary colored-title text-white">MAKE</span> YOUR FIRST <br/>
+                <span class="swatch-primary-dark colored-title text-white">SLIDESHOW</span> NOW
             </h2>
-            <a class="card-btn btn btn-primary" href="#">
-                <img src="assets/images/icons/windowsIcon.svg" alt="Download Slideshow Software"/>
+            <a class="cta-btn btn btn-primary mb-s" href="#download-link" tabindex="0">
+                <img src="assets/images/icons/windowsIcon.svg" alt="Windows logo" aria-hidden="true"/>
                 DOWNLOAD SLIDESHOW SOFTWARE
             </a>
-            <p class="cta-desc">
+            <p class="cta-desc text-2lg text-gray-dark">
                 No watermarks. No limits. Turn memories into a story
             </p>
+            <div class="cta-images" aria-hidden="true">
+                <img class="position-absolute cta-image-1 cta-image" src="assets/images/image/people-on-the-beach.webp" alt=""/>
+                <img class="position-absolute cta-image-2 cta-image" src="assets/images/image/smiling-people.webp" alt=""/>
+                <img class="position-absolute cta-image-3 cta-image" src="assets/images/image/flowers.webp" alt=""/>
+                <img class="position-absolute cta-image-4 cta-image" src="assets/images/image/dancing-people.webp" alt=""/>
+                <img class="position-absolute cta-image-5 cta-image" src="assets/images/image/girl-dog.webp" alt=""/>
+                <img class="position-absolute cta-image-6 cta-image" src="assets/images/image/girl-with-dog.webp" alt=""/>
+            </div>
         </div>
     </section>
-  <section class="faq">
+    <section id="faq" class="faq" aria-labelledby="faq-title">
     <h2 class="text-2xl mb-lg font-bolder text-center">FAQ</h2>
     <div class="faq-list flex flex-col gap-smd">
 
@@ -502,25 +503,26 @@
     </div>
   </section>
 </main>
-<footer class="footer swatch-primary py-2lg">
-    <div class="footer-container flex justify-between items-start">
+<footer id="contact" class="footer swatch-primary py-2lg" role="contentinfo">
+    <div class="footer-container flex items-start justify-between">
         <div class="footer-logo">
             <img src="assets/images/icons/logo.svg" alt="Slideshow Maker Logo"/>
         </div>
-        <nav class="footer-nav flex text-white text-sm">
+        <nav class="footer-nav flex text-white text-sm" aria-label="Footer">
             <ul class="footer-links flex flex-col gap-s">
-                <li><a href="#">Features</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Tutorials & How-To Guide</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#features" tabindex="0">Features</a></li>
+                <li><a href="#faq" tabindex="0">FAQ</a></li>
+                <li><a href="#tutorials" tabindex="0">Tutorials & How-To Guide</a></li>
+                <li><a href="#contact" tabindex="0">Contact us</a></li>
             </ul>
-            <ul class="footer-links flex flex-col gap-s">
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+            <ul class="footer-links-second flex flex-col gap-s">
+                <li><a href="#terms" tabindex="0">Terms & Conditions</a></li>
+                <li><a href="#privacy" tabindex="0">Privacy Policy</a></li>
             </ul>
         </nav>
-        <div class="footer-powered">Powered by Icecream Apps</div>
+        <div class="footer-powered text-sm">Powered by Icecream Apps</div>
     </div>
 </footer>
+
 </body>
 </html>
